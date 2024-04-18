@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF; }
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url(/assets/fonts/NotoSans-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(/assets/fonts/NotoSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(/assets/fonts/NotoSans-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(/assets/fonts/NotoSans-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(/assets/fonts/NotoSans-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+body {
+  font-family: Noto Sans, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  transition: 0.3s ease;
+  scroll-behavior: smooth;
+  color: #242D2F;
+  display: flex;
+  flex-direction: column; }
+
+/*# sourceMappingURL=style.css.map */
