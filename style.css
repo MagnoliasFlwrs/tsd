@@ -56,7 +56,14 @@ body {
   transition: 0.3s ease;
   scroll-behavior: smooth;
   color: #242D2F;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column; }
+
+.content {
+  max-width: calc(1440px + 16px * 2);
+  padding: 0 16px;
+  margin: 0 auto;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
