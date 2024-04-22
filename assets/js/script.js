@@ -8,6 +8,16 @@ langList.forEach(el => {
         langWrap.classList.add('active');
     })
 })
+const moblangList = document.querySelectorAll('.mobile-lang .lang-content li');
+const moblangLink = document.querySelector('.mobile-lang .lang-link');
+const moblangWrap = document.querySelector('.mobile-lang');
+
+moblangList.forEach(el => {
+    el.addEventListener('click' , () => {
+        moblangLink.innerHTML = el.querySelector('a').innerHTML;
+        moblangWrap.classList.add('active');
+    })
+})
 
 // catalog
 
@@ -67,3 +77,72 @@ phoneList.forEach(el => {
         phoneWrap.classList.add('active');
     })
 })
+
+// mobile-menu
+
+const burger = document.querySelector('.burger-button');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeBtns = document.querySelectorAll('.mobile-menu .close-btn');
+const droprightItems = document.querySelectorAll('.mobile-menu .dropright');
+const backBtns = document.querySelectorAll('.mobile-menu .back');
+
+burger?.addEventListener('click' , ()=> {
+    mobileMenu.classList.add('active')
+})
+
+closeBtns?.forEach(el=> {
+    el.addEventListener('click' , ()=> {
+        mobileMenu.classList.remove('active')
+    })
+})
+
+droprightItems?.forEach(el=> {
+    el.addEventListener('click' , (e)=> {
+        e.preventDefault();
+        let currScreen = el.closest('li').querySelector('.screen')
+        currScreen.classList.add('active');
+    })
+})
+backBtns.forEach(el=> {
+    el.addEventListener('click' , (e)=> {
+        e.stopPropagation();
+        let droprightScreen = e.target.closest('.screen');
+        droprightScreen.classList.remove('active');
+    })
+})
+
+
+
+const thumbsGallery = document.querySelector('.gallery-mini');
+
+if (thumbsGallery) {
+    let swiper4 = new Swiper(".gallery-mini", {
+        spaceBetween: 3,
+        slidesPerView: 5,
+        freeMode: true,
+        direction: "horizontal",
+        navigation: {
+            nextEl: ".mini-button-next",
+            prevEl: ".mini-button-prev",
+        },
+    });
+    let swiper5 = new Swiper(".gallery", {
+        spaceBetween: 10,
+        thumbs: {
+            swiper: swiper4,
+        },
+    });
+}
+
+const newProductsSwiper = document.querySelector('.new-products-swiper');
+
+if (newProductsSwiper) {
+    const swiper = new Swiper('.new-products-swiper', {
+        spaceBetween: 3,
+        slidesPerView: 5,
+        freeMode: true,
+
+    });
+}
+
+
