@@ -23,7 +23,7 @@ moblangList.forEach(el => {
 
 const catalogBtn = document.querySelector('.catalog-btn');
 const catalogBlock = document.querySelector('.catalog-block');
-const droprightLi = document.querySelector('.dropright-inner');
+const droprightLi = document.querySelector('.dropright-inner .dropright-icon');
 const catalogSubmenu = document.querySelector('.catalog-submenu');
 
 catalogBtn?.addEventListener('click' , ()=> {
@@ -36,7 +36,7 @@ droprightLi?.addEventListener('click' , ()=> {
 
 
 // header-nav
-const dropdownInner = document.querySelector('.dropdown-inner a');
+const dropdownInner = document.querySelector('.dropdown-inner .dropright-icon');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 const dropdownMoreItems = document.querySelector('.more-items');
 const dropdownMenuMoreItems = document.querySelector('.dropdown-menu-more-items');
